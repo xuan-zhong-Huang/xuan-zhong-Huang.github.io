@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>研究成果</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">網頁備審</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-4">
+            <a class="nav-link" href="./index.html">主頁</a>
+          </li>
+          <li class="nav-item active mx-4">
+            <a class="nav-link" href="./research.html">研究成果和專案實作</a>
+          </li>
+          <li class="nav-item mx-4"></li>
+          <a class="nav-link" aria-current="page" href="./document/drone.pdf">無人機小論文</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h2>學習動機 </h2>
+    <p>
+      我對互動媒體和遊戲設計有濃厚的興趣，之所以選擇Unity作為遊戲開發引擎，是因為它能支持跨平台和容易在網路上找到許多豐富的資源，能夠實現我創意中的各種可能性。通過Unity，我希望學習如何結合程式、設計和藝術，創造出能夠帶給玩家樂趣且富有意義的體驗，並同時增強我的程式技能與解決問題的能力。
+    </p>
+    <h2>學習目的 </h2>
+    <ul>
+      <li>學會如何製作遊戲 </li>
+      <li>了解遊戲機制與技術應用 </li>
+      <li>了解玩家心理、學習基礎遊戲企劃</li>
+      <li>從理論到實作 </li>
+    </ul>
+    <h2>學習方法</h2>
+    <ul>
+      <li>自我發想主題</li>
+      <li>藉由大量小專案練習實作技巧</li>
+      <li>透過線上資源提升開發能力</li>
+      <li>與軟體社群上的工程師交流獲得更多啟發與軟體社群上的工程師交流獲得更多啟發</li>
+      <li>使用遊戲引擎</li>
+    </ul>
+    <h2>使用引擎---Unity</h2>
+    <p>
+      Unity是一款跨平台的遊戲製作引擎，可用於開發2D和3D遊戲，支援多種個人電腦、行動裝置、遊戲主機、網頁平台、擴增實境和虛擬實境，其中在iOS和Android的遊戲開發上特別受歡迎，被認為容易上手，並在獨立遊戲開發中廣受到歡迎。
+    </p>
+    <h2>遊戲說明：</h2>
+    <p>熟悉Unity操作介面，並透過網路素材來建構遊戲畫面。
+      透過鍵盤事件控制汽車遊戲物件，達到前進、轉向、後退等功能。
+      使用RigidBody 2D組件來實現物理系統。
+      控制Box Collider 2D碰撞器組件來做到碰撞效果、吃禮物加速加分等功能。</p>
+    <h2>遊戲玩法:</h2>
+    <p>透過 WASD 控制車輛行進，當吃到特定物品時會加速/減速或加分
+      可以與朋友比賽時間內誰能獲得最多分者勝</p>
+    <h2>部分程式碼：</h2>
+    <img src="./image/research/1.png" alt="" style="width: 100% ;">
+    <h2 class="h1">學習心得</h2>
+    <p  class="h4 lh-base">這是我第一次使用 Unity 製作遊戲，整體過程既充滿挑戰也充滿學習。Unity 的控制界面很直觀也適合初學者，但在剛開始時，面對複雜的功能與工具，確實讓我感到有些不知所措，讓我花了一點時間摸索，漸漸熟悉了基本功能。 
+
+      首先，製作遊戲前需要規劃遊戲的許多細節，例如找到或客製合適的素材，將2D素材匯入後，我迎接了下一個難題，就是當我開始撰寫遊戲物件的程式時。因為Unity 使用 C# 作為主要的程式語言，因此我必須先熟悉C#的基本語法，接著才有辦法控制遊戲物件，再來我上網學習了一些Unity物理引擎的特性及使用方法，透過Unity內建的物理引擎可以讓物件之間的碰撞和互動變的真實、有趣，讓這個賽車遊戲的可玩性大大提升，途中我還遇到了一些問題，例如車子在移動時不流暢，轉彎不符合邏輯等，這就牽涉到如何調校剛體 RigidBody 和碰撞體Collider的參數，才可以讓遊戲更加順暢、自然，給予玩家更好的體驗。 
+      
+      總而言之，這次使用 Unity 製作遊戲的經歷讓我對遊戲開發有了更深的理解。我不僅學會了如何設計場景和角色，還逐漸掌握了撰寫程式腳本和優化物理引擎的方法。雖然過程中充滿了有些顛簸，但最後看到自己的遊戲成果時，讓我內心充盈著滿滿的成就感。 
+      
+      這次的經驗讓我對未來製作更複雜的遊戲充滿信心，也更加期待下次能做出一個更完整的好玩遊戲。 </p>
+  </div>
+
+</body>
+
+</html>
