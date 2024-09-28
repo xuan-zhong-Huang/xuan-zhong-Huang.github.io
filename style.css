@@ -1,6 +1,140 @@
-.my-word1 {
-    color: rgb(135, 59, 206);
-    font-size: 100px;
+.frame {
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-portfolio {
+    border: 8px solid #ffffff;
+    max-width: 920px;
+    min-width: 50;
+    min-height: 100vh;
+}
+
+.left {
+    width: 50%;
+    padding: 20px;
+}
+
+.right {
+    width: 50%;
+}
+
+.my-portfolio h1,
+.my-portfolio h4,
+.my-portfolio p {
+    color: #ffffff;
+}
+
+hr {
+    border-bottom: 4px solid #ff7168;
+    width: 40%;
+    margin: 0;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.link-container {
+    display: flex;
+}
+
+.button-link {
+    display: block;
+    padding: 16px 22px;
+    background-color: #ff7168;
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 8px;
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+.button-link:hover {
+    background-color: #bc8e8a;
+    transform: scale(1.1);
+    color: #ffffff;
+}
+
+h4 {
+    margin: 12px 0 4px 0;
+    color: #000;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.skill-list {
+    display: flex;
+    list-style: none;
+}
+
+.skill-list li {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ff72683c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.circle::after {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.p90,
+.p180,
+.p270,
+.p360 {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: #ff7168;
+}
+
+.p90 {
+    right: 0;
+    top: 0;
+}
+
+.p180 {
+    right: 0;
+    bottom: 0;
+}
+
+.p270 {
+    left: 0;
+    bottom: 0;
+}
+
+.p360 {
+    left: 0;
+    top: 0;
 }
 
 table {
