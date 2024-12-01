@@ -1,5 +1,5 @@
 .frame {
-    background-color: #000000;
+    background: url('image/6.jpg');
     width: 100%;
     display: flex;
     justify-content: center;
@@ -7,40 +7,48 @@
 }
 
 .my-portfolio {
-    border: 8px solid #ffffff;
+    display: flex;
     max-width: 920px;
-    min-width: 50;
+    min-width: 50%;
     min-height: 100vh;
 }
 
 .left {
+
     width: 50%;
     padding: 20px;
 }
 
 .right {
     width: 50%;
+    padding-top: 100px;
 }
 
 .my-portfolio h1,
 .my-portfolio h4,
 .my-portfolio p {
     color: #ffffff;
+    font-family: "Noto Serif TC", serif;
 }
 
 hr {
     border-bottom: 4px solid #ff7168;
     width: 40%;
     margin: 0;
+    opacity: 1;
 }
 
 .description {
+    margin-bottom: 40px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    line-height: 1.6;
 }
 
 .link-container {
     display: flex;
+    margin-bottom: 50px;
 }
 
 .button-link {
@@ -60,6 +68,10 @@ hr {
     color: #ffffff;
 }
 
+h1{
+    margin-bottom: 30px;
+}
+
 h4 {
     margin: 12px 0 4px 0;
     color: #000;
@@ -71,16 +83,27 @@ h2 {
 }
 
 .skill-list {
+    margin-top: 16px;
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
 }
 
 .skill-list li {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+}
+
+.skill-list p{
+    width: 7em;
+    font-size: 14px;
+    text-align: center;
 }
 
 .circle {
@@ -159,4 +182,125 @@ td {
 
 td:last-of-type {
     text-align: center;
+}
+
+.programming-skill {
+    list-style: none;
+}
+
+.programming-skill li{
+    display: flex;
+    align-items: center;
+}
+
+.programming-skill p {
+    width: 50px;
+}
+
+.bar {
+    margin-left: 10px;
+    width: 100px;
+    height: 4px;
+    background: #ff72683c;
+    border-radius: 3px;
+    position: relative;
+}
+
+.bar > .value{
+    height: 100%;
+    background-color: #ff7168;
+    position: absolute;
+}
+
+.bar > .value.v-20{
+    width: 20%;
+}
+
+.bar > .value.v-40{
+    width: 40%;
+}
+
+.bar > .value.v-60{
+    width: 60%;
+}
+
+.bar > .value.v-80{
+    width: 80%;
+}
+
+.decoration{
+    width: 300px;
+    height: 140px;
+    background: linear-gradient(125deg,#222,#666);
+    margin: 40px 0;
+    margin-left: auto;
+    border-radius: 20% 0 0 20%;
+}
+
+.my-portfolio h4{
+    margin: 12px 0 4px 0;
+    color: #ccc;
+    font-size: 14px;
+}
+.exp-and-work {
+    list-style: none;
+    color: #ffffff;
+}
+
+.exp-and-work .year-list{
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+
+.exp-and-work .year-list h4{
+    font-weight: 800;
+    margin-top: 4px;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.exp-and-work .year-list ul{
+    border-left: 3px solid #ff7168;
+    margin-left: 4px;
+    padding-left: 1em;
+    list-style: none;
+}
+
+.exp-and-work .year-list ul li {
+    margin-bottom: 10px;
+}
+
+.exp-and-work .year-list:nth-child(1) ul{
+    border-color: #ff7168;
+}
+.exp-and-work .year-list:nth-child(2) ul{
+    border-color: #ef5f87;
+}
+.exp-and-work .year-list:nth-child(3) ul{
+    border-color: #CE5AA1;
+}
+.exp-and-work .year-list:nth-child(4) ul{
+    border-color: #9d5eb3;
+}
+.exp-and-work .year-list:nth-child(5) ul{
+    border-color: #5e62b7;
+}
+.exp-and-work .year-list:nth-child(6) ul{
+    border-color: #0062AC;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-right: 25px;
+}
+
+.header img {
+    border-radius: 8px;
 }

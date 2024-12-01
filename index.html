@@ -10,10 +10,13 @@
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">網頁備審</a>
@@ -30,7 +33,7 @@
             <a class="nav-link" aria-current="page" href="./research.html">研究成果和專案實作</a>
           </li>
           <li class="nav-item mx-4"></li>
-            <a class="nav-link" aria-current="page" href="./document/drone.pdf">無人機小論文</a>
+          <a class="nav-link" aria-current="page" href="./document/drone.pdf">無人機小論文</a>
           </li>
         </ul>
 
@@ -55,15 +58,15 @@
         </div>
         <div class="carousel-item">
           <img src="./image/2.jpg" class="d-block w-100" alt="..." data-bs-interval="3000">
-          
+
         </div>
         <div class="carousel-item">
           <img src="./image/3.jpg" class="d-block w-100" alt="..." data-bs-interval="3000">
-         
+
         </div>
         <div class="carousel-item">
           <img src="./image/4.jpg" class="d-block w-100" alt="..." data-bs-interval="3000">
-        
+
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -80,24 +83,28 @@
     <div class="frame">
 
       <div class="my-portfolio">
-       <div class="left">
+        <div class="left">
+        <div class="header">
           <h1>
             黃暄中
           </h1>
+          <img src="image/5.png" alt="" width="150">
+        </div>
           <h4>
             台中市明德中學-普通科
           </h4>
           <hr>
           <p class="description">
-            我是黃暄中,目前就讀台中市明德高中,我的興趣是打爵士鼓、唱歌、學習程式語言等，高中三年參與近年參與RoboCupJunior 2024 Taiwan Open（世界青少年機器人競賽台灣公開賽）獲佳作，亦曾赴韓參與Award of Excellence South korea open 2023，以及新加坡等公開賽，分別獲得第二名及第一名。
-  
+            我是黃暄中,目前就讀台中市明德高中,我的興趣是打爵士鼓、唱歌、學習程式語言等，高中三年參與近年參與RoboCupJunior 2024 Taiwan
+            Open（世界青少年機器人競賽台灣公開賽）獲佳作，亦曾赴韓參與Award of Excellence South korea open 2023，以及新加坡等公開賽，分別獲得第二名及第一名。
+
           </p>
           <div class="link-container">
             <a class="button-link" href="./research.html">研究成果和專案實作</a>
             <a class="button-link" href="./document/drone.pdf">無人機小論文</a>
-            
+
           </div>
-          <h4>skills</h4>
+          <h4>Skills</h4>
           <h2>專業技能</h2>
 
           <ul class="skill-list">
@@ -115,10 +122,72 @@
                 <div class="p180"></div>
                 <div class="p270"></div>
               </div>
-              <p>後端網頁開發</p>
+              <p>Unity 遊戲開發</p>
+            </li>
+            <li>
+              <div class="circle">
+                <div class="p90"></div>
+                <div class="p180"></div>
+                <div class="p270"></div>
+              </div>
+              <p>Cospace</p>
+            </li>
+            <li>
+              <div class="circle">
+                <div class="p90"></div>
+                <div class="p180"></div>
+                <div class="p270"></div>
+              </div>
+              <p>影片剪輯</p>
+            </li>
+
+            <li>
+              <div class="circle">
+                <div class="p90"></div>
+                <div class="p180"></div>
+                <div class="p270"></div>
+              </div>
+              <p>圖片處理</p>
+            </li>
+
+            <li>
+              <div class="circle">
+                <div class="p90"></div>
+                <div class="p180"></div>
+                <div class="p270"></div>
+              </div>
+              <p>介面設計</p>
+            </li>
+
+          </ul>
+        </div>
+        <div class="right">
+
+          <h4>Programming Languge</h4>
+          <h2>程式語言能力</h2>
+
+          <ul class="programming-skill">
+            <li>
+              <p>C</p>
+              <div class="bar">
+                <div class="value v-40"></div>
+              </div>
+            </li>
+            <li>
+              <p>C#</p>
+              <div class="bar">
+                <div class="value v-60"></div>
+              </div>
+
             </li>
           </ul>
-       </div>
+
+          <h4>Contests</h4>
+          <h2>比賽經歷</h2>
+          <ul id="exp-and-work" class="exp-and-work">
+          </ul>
+
+        </div>
       </div>
     </div>
 
@@ -211,33 +280,37 @@
                   <th scope="row">
                     2023 RoboRAVE Fire Fighting TAIWAN OPEN
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#modalFirefighting2023">
-                    學習歷程簡報
-                  </button>
+                      data-bs-target="#modalFirefighting2023">
+                      學習歷程簡報
+                    </button>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="modalFirefighting2023" tabindex="-1" aria-labelledby="modalFirefighting2023"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">2023 RoboRAVE Fire Fighting TAIWAN OPEN</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalFirefighting2023" tabindex="-1"
+                      aria-labelledby="modalFirefighting2023" aria-hidden="true">
+                      <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">2023 RoboRAVE Fire Fighting TAIWAN OPEN</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGOcYQG1JA&#x2F;GCynTKRJj8irOIJ6oJyB6g&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-普丁黃暄中 設計的 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGOcYQG1JA&#x2F;GCynTKRJj8irOIJ6oJyB6g&#x2F;view?utm_content=DAGOcYQG1JA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">心得與反思</a>
-                        </div>
+                              <iframe loading="lazy"
+                                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGOcYQG1JA&#x2F;GCynTKRJj8irOIJ6oJyB6g&#x2F;view?embed"
+                                allowfullscreen="allowfullscreen" allow="fullscreen">
+                              </iframe>
+                            </div>
+                            普丁黃暄中 設計的 <a
+                              href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGOcYQG1JA&#x2F;GCynTKRJj8irOIJ6oJyB6g&#x2F;view?utm_content=DAGOcYQG1JA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                              target="_blank" rel="noopener">心得與反思</a>
+                          </div>
 
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </th>
                   <td>高中組</td>
                   <td>全國</td>
@@ -319,38 +392,38 @@
                   <th scope="row">
                     2024 Robocup cospace singapore open (superl team)
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#modalRobocup2024">
-                    學習歷程簡報
-                  </button>
+                      data-bs-target="#modalRobocup2024">
+                      學習歷程簡報
+                    </button>
 
-                  <!-- Modal -->
-                  <div class="modal fade" id="modalRobocup2024" tabindex="-1" aria-labelledby="modalRobocup2024"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-fullscreen">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">2024 Robocup cospace singapore open
-                            (international team)</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                          <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalRobocup2024" tabindex="-1" aria-labelledby="modalRobocup2024"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">2024 Robocup cospace singapore open
+                              (international team)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
 padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
 border-radius: 8px; will-change: transform;">
-                            <iframe loading="lazy"
-                              style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                              src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGMeaiuaWw&#x2F;M-GJzSN6hirfuzei1OAHSw&#x2F;view?embed"
-                              allowfullscreen="allowfullscreen" allow="fullscreen">
-                            </iframe>
+                              <iframe loading="lazy"
+                                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGMeaiuaWw&#x2F;M-GJzSN6hirfuzei1OAHSw&#x2F;view?embed"
+                                allowfullscreen="allowfullscreen" allow="fullscreen">
+                              </iframe>
+                            </div>
+                            普丁黃暄中 設計的 <a
+                              href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGMeaiuaWw&#x2F;M-GJzSN6hirfuzei1OAHSw&#x2F;view?utm_content=DAGMeaiuaWw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+                              target="_blank" rel="noopener">profile</a>
                           </div>
-                          普丁黃暄中 設計的 <a
-                            href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGMeaiuaWw&#x2F;M-GJzSN6hirfuzei1OAHSw&#x2F;view?utm_content=DAGMeaiuaWw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
-                            target="_blank" rel="noopener">profile</a>
-                        </div>
 
+                        </div>
                       </div>
                     </div>
-                  </div>
                   </th>
                   <td>高中高級組U19</td>
                   <td>國際</td>
@@ -369,12 +442,8 @@ border-radius: 8px; will-change: transform;">
       </div>
     </div>
 
-
-
-    <ul>
-
-    </ul>
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
